@@ -5,8 +5,7 @@ nodes
 [OSEv3:vars]
 ansible_ssh_user=root
 deployment_type=openshift-enterprise
-openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/ht
-passwd'}]
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
 containerized=true
 openshift_public_hostname=console.openshift.ocp
 openshift_master_default_subdomain=apps.console.openshift.ocp
