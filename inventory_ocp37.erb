@@ -1,5 +1,6 @@
 [OSEv3:children]
 masters
+etcd
 nodes
 
 [OSEv3:vars]
@@ -14,6 +15,9 @@ enable_excluders=false
 
 [masters]
 console.openshift.ocp openshift_schedulable=true
+
+[etcd]
+console.openshift.ocp
 
 [nodes]
 console.openshift.ocp openshift_node_labels="{'region': 'infra', 'zone': 'default'}" openshift_schedulable=true
