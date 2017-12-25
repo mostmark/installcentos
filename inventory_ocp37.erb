@@ -13,6 +13,9 @@ openshift_master_default_subdomain=apps.console.openshift.ocp
 openshift_hosted_metrics_deploy=false
 enable_excluders=false
 
+#Disable disk and memory checks
+openshift_disable_check=disk_availability,memory_availability
+
 [masters]
 console.openshift.ocp openshift_schedulable=true
 
